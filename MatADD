@@ -1,0 +1,19 @@
+C = int(input("Enter number of columns"))
+R= int(input("Enter number of rows"))
+M1 = [[int(input()) for x in range (C)] for y in range(R)]
+for i in range(R):
+    for j in range(C):
+        print(M1[i][j], end = " ")
+    print()
+
+M2 = [[int(input()) for x in range (C)] for y in range(R)]
+for i in range(R):
+    for j in range(C):
+        print(M2[i][j], end = " ")
+    print()
+
+result = [[M1[i][j] + M2[i][j]  for j in range
+(len(M1[0]))] for i in range(len(M1))]
+  
+for r in result:
+    print(r)
