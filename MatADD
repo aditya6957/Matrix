@@ -1,5 +1,5 @@
-C = int(input("Enter number of columns"))
 R= int(input("Enter number of rows"))
+C = int(input("Enter number of columns"))
 M1 = [[int(input()) for x in range (C)] for y in range(R)]
 for i in range(R):
     for j in range(C):
