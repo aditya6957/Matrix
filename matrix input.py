@@ -1,6 +1,9 @@
-def make_zeros(n_rows: int, n_columns: int):
-    matrix = []
-    for i in range(n_rows):
-        matrix.append([0] * n_columns)
-    return matrix
-print(make_zeros(2, 2))
+def new_matrix(row: int, col: int):
+    matrix = [[int(input()) for x in range (col)] for y in range(row)]
+    for i in range(row):
+        for j in range(col):
+            print(matrix[i][j], end = " ")
+        return matrix
+
+m1 = new_matrix(2, 2)
+print(m1)
